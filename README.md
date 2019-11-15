@@ -15,11 +15,16 @@ Several  preprocessing  steps  needed  to  be  taken  prior  to  conducting  fea
 For the feature  selection  method,  we identified two  methods  to  increase  performance  of  our classifier(in  this  case,  performance  is  the  optimal  precision/recall  point).  First,  we  selected CfsSubsetEval  in  Weka  to  perform  feature  selection.  This  evaluator  considers  the  individual predictive ability of each feature and  evaluates a  possible subset of attributes. The subset of features are correlated with the class. After a time-consuming and computationally heavy greedy search, we generated 60 selected features. Greedy algorithm provides an optimal choice at each stage,  the  chosen  solution  contributes  to  a  solution  and  iterates.  Based  on  the resulting features from greedy search, we implemented a genetic search feature selection method in Weka to boost the  accuracy  of  the  selected  features.The  genetic  algorithm  resultedin a  similar  number  of features to the  greedy  search.However,  the individual  elements  in  genetic  algorithm  are evaluated from high performance ‘offspring’ from their parents, as a result, this leads to an improvement of the dataset and their features to the given goal.
 
 ## 3) Training and Testing the Classifier
-The unlabelled dataset was divided in a 70-30 split. A feedforward neural network was designed in MATLAB. The number of hidden layers and learning rate were iteratively optimized. Steps were taken to ensure the classifier does not overfit the training set. The number of hidden layers was kept low (between 1 and 3), to avoid over-estimating the complexity of the target problem. A number of training functions were then tested, and were assessed based on the ability of the network to generalize to the hold-out set.These include ‘trainlm’ which is based on Levenberg-Marquardt backpropagation, ‘trainscg’ which is scaled conjugate gradient backpropagation, and ‘trainbr’ which is a bayesian regularization backpropagation algorithm based on Levenberg-Marquardt optimization. ‘Trainbr’ seemed to perform the best, when used with its default training parameters.
+The unlabelled dataset was divided in a 70-30 split. A feedforward neural network was designed in MATLAB. The number of hidden layers and learning rate were iteratively optimized. Steps were taken to ensure the classifier does not overfit the training set. The number of hidden layers was kept low (between 1 and 3), to avoid over-estimating the complexity of the target problem.
+
+![Alt text](neuralnet.png?raw=true "Title")
+
+
+A number of training functions were then tested, and were assessed based on the ability of the network to generalize to the hold-out set.These include ‘trainlm’ which is based on Levenberg-Marquardt backpropagation, ‘trainscg’ which is scaled conjugate gradient backpropagation, and ‘trainbr’ which is a bayesian regularization backpropagation algorithm based on Levenberg-Marquardt optimization. ‘Trainbr’ seemed to perform the best, when used with its default training parameters.
 
 ## 4) Meta-Learning Approach
 Given the success of undersampling in increasing the performance of the classifier, a variation on bagging was explored to further improve the sensitivity and recall.
 
-![Alt text](neuralnet.png?raw=true "Title")
+![Alt text](process.png?raw=true "Title")
 
 
