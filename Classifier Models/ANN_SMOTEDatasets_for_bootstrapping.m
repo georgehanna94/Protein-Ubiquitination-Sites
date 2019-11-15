@@ -1,0 +1,145 @@
+%This will be the algorithm to work - GH
+%Author: George Hanna and Jinny Lee
+%BIOM 5405
+%Course Project
+
+clear all;
+close all;
+
+%Load Training Set
+trainset = csvread('Input.csv');
+targetset = csvread('Class.csv');
+trainset = horzcat(trainset,targetset);
+oracledata = csvread('oracledata.csv');
+trainset = vertcat(trainset,oracledata);
+
+train_inputs = trainset(:,[1:435]);
+train_targets = trainset(:,436);
+train_inputs(train_inputs == -9999) = NaN;
+
+testset = csvread('blindTest_feature.csv');
+test_inputs = testset(:,[1:435]);
+test_inputs(test_inputs == -9999) = NaN;
+%test_targets = testset(:,436);
+
+
+%Handle -9999 Values
+Med_devs = mad(train_inputs);
+for i=1:size(train_inputs,2)
+    
+    %Replace NaNs with median in each column
+    temp = train_inputs(:,i);
+    k = find(isnan(temp));
+    temp(k) = median(temp,'omitnan');
+    train_inputs(:,i) = temp;
+    
+    %Replace NaNs with median in each column
+    temp = test_inputs(:,i);
+    temp(isnan(temp)) = median(temp, 'omitnan');
+    test_inputs(:,i) = temp;
+    
+    %Replace train values more than 6 MADs away with median of column
+    temp = abs(train_inputs(:,i)- median(train_inputs(:,i)))/Med_devs(i);
+    Ind = find(temp>6);
+    train_inputs(Ind,i) = median(train_inputs(:,i));
+    
+    %Replace test values more than 6 MADs away with median of column
+    temp = abs(test_inputs(:,i)- median(test_inputs(:,i)))/Med_devs(i);
+    Ind = find(temp>6);
+    test_inputs(Ind,i) = median(test_inputs(:,i));
+
+end
+
+%Apply feature selection in WEKA and copy results here
+%Features applied here are first 56 from greedy search
+features = [3,16,34,39,41,58,60,72,102,108,114,119,121,124,126,132,138,155,161,165,171,172,173,179,199,209,211,212,213,214,216,217,218,229,230,233,234,238,239,243,244,245,246,253,256,257,259,261,267,299,307,362,372,387,392,396,411,414,415,421,436];
+traininputs = selectfeatures(features,train_inputs);
+testinputs = selectfeatures(features,test_inputs);
+
+%Select Number of Boostrap Samples
+nb_btrp_samples = 1;
+
+positive = find(train_targets);
+negative = find(train_targets==0);
+NN = cell(1, nb_btrp_samples);
+
+x_test = testinputs;
+%t_test = test_targets;
+t = templateTree('surrogate','all');
+
+
+for k = 1:nb_btrp_samples
+    iter_negative = randsample(negative,size(positive,1),true);
+    iter_positive = randsample(positive,size(positive,1),true);
+    trainset_targetinds = [iter_negative;positive];
+    %Shuffle to remove bias
+    trainset_targetinds = trainset_targetinds(randperm(length(trainset_targetinds)));
+    desired_output  = train_targets(trainset_targetinds);
+    trainset = traininputs(trainset_targetinds,:);
+    
+    %Create Ensemble Classifier
+    %Ensemble{k} = fitensemble(trainset,desired_output,'RUSBoost',500,t,'LearnRate',0.1);
+    
+    %Neural Network Architecture with Hidden Layer size
+    hiddenLayerSize = 2;
+    net = patternnet(hiddenLayerSize);
+    net.trainFcn = 'trainbr';
+
+    %Training Phase
+    %Set number of NN to train
+    perfs = zeros(1, nb_btrp_samples);
+    
+    fprintf('Training %d/%d\n', k, nb_btrp_samples);
+    NN{k} = train(net, trainset', desired_output');
+
+end
+
+%Temporary TEst
+%Sample = fitensemble(trainset,desired_output,'LPBoost',500,t);
+%temp = predict(Sample,x_test);
+%figure, plotconfusion(t_test',temp')
+%figure,plotconfusion(t_test',results')
+
+%Testing Phase
+perfs = zeros(1, nb_btrp_samples);
+y2Total = 0 ;
+for i = 1: nb_btrp_samples
+    neti = NN{i};
+    %Apply NN
+    y2 = neti(x_test');
+    %[results, scores] = predict(Ensemble{i},x_test);
+    
+    
+    %y2 = (y2 +scores(:,2)')./2;
+    
+    y2(y2<0.665) = 0;
+    y2(y2>=0.665) = 1;
+
+    y(i,:) = y2;
+
+    %Apply Ensemble Tree
+    %results = predict(Ensemble{i},x_test);
+    %perfs(i) = mse(neti,t_test',y2);
+    %y(i,:) = 
+    %y2Total = y2Total +y2;%+results';
+end
+
+if (nb_btrp_samples >= 3)
+
+    %Sum along columns
+    sum_y = sum(y);
+    sum_y(sum_y<(nb_btrp_samples/2)) = 0;
+    sum_y(sum_y>=(nb_btrp_samples/2)) = 1;
+
+    %figure, plotconfusion(t_test',sum_y)
+else
+    figure, plotconfusion(t_test', y2)
+end
+
+
+csvwrite('Grp11_preds.csv',sum_y')
+
+%perfAveragedOutputs = mse (NN{1},t_test,y2AverageOutput);
+
+
+

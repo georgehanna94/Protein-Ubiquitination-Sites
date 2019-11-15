@@ -1,0 +1,275 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.2 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H 2
+Relation:     LabelledTrain-weka.filters.unsupervised.attribute.Remove-R1-23,25-28,30-32,34-59,61-62,64,67,71-85,87-96,98-101,103-104,106,109,111,114,118,120,124-131,133-138,140-146,148-149,151-153,155-162,167-171,173-175,177-178,180-208,210-215,218-233,235-243,245-270,272-289,291-298,300-307,309-339,341-358,360-361,363-366,368-384,386-390,392-393,397-411,413-414,416-421,423-432,434-436-weka.filters.supervised.instance.StratifiedRemoveFolds-S0-N10-F4-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.supervised.instance.SMOTE-C2-K3-P500.0-S1-weka.filters.unsupervised.instance.Randomize-S42
+Instances:    34441
+Attributes:   61
+              Ap_AC1_PCR_N2
+              IP_AC1_PLR_DE
+              IP_AC1_Center_G
+              Ap_AC2_NPR_N2
+              Ap_AC2_PLR_G
+              Ap_AC2_ALR_N2
+              IP_AC2_Center_G
+              DHf_AC3_PCR_N2
+              IP_AC3_PCR_N2
+              Pt_AC3_PCR_N2
+              DHf_AC3_LYS_N2
+              IP_AC3_Center_G
+              Z3_ES_PCR_N2
+              IP_ES_PLR_N2
+              Gs(U)_ES_PCR_N2
+              IP_ES_PLR_DE
+              Z3_ES_PLR_Ar
+              Pt_ES_PCR_N2
+              Z3_ES_UCR_N2
+              IP_ES_Center_N2
+              Gs(U)_ES_PLR_Ar
+              Z3_ES_PCR_Ar
+              Z3_ES_AHR_Ar
+              Ap_ES_PLR_Ar
+              Z3_ES_UCR_DE
+              Z1_ES_PCR_N2
+              Gs(U)_ES_PRT_Ar
+              Z3_ES_PLR_N2
+              IP_ES_PCR_Ar
+              IP_ES_PCR_G
+              DHf_ES_PCR_DE
+              Z3_ES_LYS_N2
+              Z1_ES_PRT_Ar
+              Z1_ES_PLR_N2
+              Z3_ES_Center_DE
+              Pt_ES_PCR_Ar
+              Z1_ES_LYS_N2
+              Z3_ES_ALR_Ar
+              IP_KH1_PLR_DE
+              Z1_KH1_PCR_Ar
+              Z1_KH1_PCR_G
+              Pt_KH1_UCR_DE
+              Z3_KH1_Center_N2
+              Ap_KH2_PLR_Ar
+              Z3_KH2_UCR_N2
+              Pb_KH2_PRT_N2
+              IP_KH3_PCR_N2
+              Pb_KH3_PRT_N2
+              Ap_NO_PLR_G
+              Z3_NO_AHR_Ar
+              Z3_NO_PLR_Ar
+              IP_NO_PLR_N2
+              Pb_NO_PCR_DE
+              Z3_NO_UCR_DE
+              Z3_NO_Center_N2
+              Z1_NO_PLR_G
+              Z3_NO_UCR_Ar
+              Z3_NO_Center_DE
+              IP_NO_Center_G
+              Z3_ES_16_N2
+              class
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -0.48069305049592925
+    Node 2    1.75254540681781
+    Node 3    2.5680022774374267
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    0.48069305049592925
+    Node 2    -1.7525454068178092
+    Node 3    -2.568002277437427
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    0.8752110827721834
+    Attrib Ap_AC1_PCR_N2    5.027493442253954
+    Attrib IP_AC1_PLR_DE    -2.6872036343009955
+    Attrib IP_AC1_Center_G    8.922209370526442
+    Attrib Ap_AC2_NPR_N2    1.273639964870257
+    Attrib Ap_AC2_PLR_G    -3.1580152673531785
+    Attrib Ap_AC2_ALR_N2    4.370068151483743
+    Attrib IP_AC2_Center_G    6.0160629089593085
+    Attrib DHf_AC3_PCR_N2    14.641397643677239
+    Attrib IP_AC3_PCR_N2    -6.49301616697233
+    Attrib Pt_AC3_PCR_N2    -9.632004128248054
+    Attrib DHf_AC3_LYS_N2    -8.031565771422711
+    Attrib IP_AC3_Center_G    6.804023224381669
+    Attrib Z3_ES_PCR_N2    -2.735529010222943
+    Attrib IP_ES_PLR_N2    3.209164582507727
+    Attrib Gs(U)_ES_PCR_N2    -1.6104487361881858
+    Attrib IP_ES_PLR_DE    -5.613070492833541
+    Attrib Z3_ES_PLR_Ar    2.668763373189883
+    Attrib Pt_ES_PCR_N2    4.95057794337406
+    Attrib Z3_ES_UCR_N2    1.9873873427475353
+    Attrib IP_ES_Center_N2    2.5260477458971993
+    Attrib Gs(U)_ES_PLR_Ar    2.5973070527490014
+    Attrib Z3_ES_PCR_Ar    -2.7159673238072477
+    Attrib Z3_ES_AHR_Ar    3.2745606688618087
+    Attrib Ap_ES_PLR_Ar    4.417326560833699
+    Attrib Z3_ES_UCR_DE    1.0245140048738433
+    Attrib Z1_ES_PCR_N2    -4.420354350873066
+    Attrib Gs(U)_ES_PRT_Ar    -7.245668139814098
+    Attrib Z3_ES_PLR_N2    7.784539154809386
+    Attrib IP_ES_PCR_Ar    1.6139785322908475
+    Attrib IP_ES_PCR_G    -1.54236298977925
+    Attrib DHf_ES_PCR_DE    0.33871294071486446
+    Attrib Z3_ES_LYS_N2    7.810121793228039
+    Attrib Z1_ES_PRT_Ar    1.473544526191884
+    Attrib Z1_ES_PLR_N2    -13.175536494331803
+    Attrib Z3_ES_Center_DE    6.220995522701684
+    Attrib Pt_ES_PCR_Ar    -1.6803909200289247
+    Attrib Z1_ES_LYS_N2    -3.4992251131335705
+    Attrib Z3_ES_ALR_Ar    -2.0225277746089647
+    Attrib IP_KH1_PLR_DE    -10.747486743963861
+    Attrib Z1_KH1_PCR_Ar    -1.4927521936084402
+    Attrib Z1_KH1_PCR_G    3.8327302299319106
+    Attrib Pt_KH1_UCR_DE    -11.743586345837372
+    Attrib Z3_KH1_Center_N2    9.031378915978314
+    Attrib Ap_KH2_PLR_Ar    -9.53974930545485
+    Attrib Z3_KH2_UCR_N2    9.029035995490617
+    Attrib Pb_KH2_PRT_N2    -8.893026961429232
+    Attrib IP_KH3_PCR_N2    2.9611035629600595
+    Attrib Pb_KH3_PRT_N2    -9.889666554032395
+    Attrib Ap_NO_PLR_G    -0.07402938232357675
+    Attrib Z3_NO_AHR_Ar    0.5547021464716018
+    Attrib Z3_NO_PLR_Ar    5.35570526738543
+    Attrib IP_NO_PLR_N2    9.731445619568927
+    Attrib Pb_NO_PCR_DE    3.1176961241625403
+    Attrib Z3_NO_UCR_DE    6.213340792683392
+    Attrib Z3_NO_Center_N2    9.92936654055101
+    Attrib Z1_NO_PLR_G    1.2219282928919164
+    Attrib Z3_NO_UCR_Ar    6.594098773898121
+    Attrib Z3_NO_Center_DE    0.30665564062125367
+    Attrib IP_NO_Center_G    -1.4749901560681602
+    Attrib Z3_ES_16_N2    0.41223141903478555
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    0.12789516749018484
+    Attrib Ap_AC1_PCR_N2    20.304995636318075
+    Attrib IP_AC1_PLR_DE    1.289533590598782
+    Attrib IP_AC1_Center_G    -0.11707332718532301
+    Attrib Ap_AC2_NPR_N2    -5.175647941472195
+    Attrib Ap_AC2_PLR_G    -2.033458911507649
+    Attrib Ap_AC2_ALR_N2    -8.828718296116767
+    Attrib IP_AC2_Center_G    -6.012704957755522
+    Attrib DHf_AC3_PCR_N2    16.725345845494896
+    Attrib IP_AC3_PCR_N2    6.264066243381167
+    Attrib Pt_AC3_PCR_N2    -7.146708480613013
+    Attrib DHf_AC3_LYS_N2    -15.312322207093075
+    Attrib IP_AC3_Center_G    -12.98374210631491
+    Attrib Z3_ES_PCR_N2    -19.15546382211587
+    Attrib IP_ES_PLR_N2    -8.068125379525261
+    Attrib Gs(U)_ES_PCR_N2    -14.048294900981881
+    Attrib IP_ES_PLR_DE    -9.279980462225952
+    Attrib Z3_ES_PLR_Ar    4.929602286856778
+    Attrib Pt_ES_PCR_N2    13.563523205406346
+    Attrib Z3_ES_UCR_N2    0.5148891501452243
+    Attrib IP_ES_Center_N2    -9.434629375201471
+    Attrib Gs(U)_ES_PLR_Ar    -0.7962458239991391
+    Attrib Z3_ES_PCR_Ar    2.561528578222622
+    Attrib Z3_ES_AHR_Ar    19.959217326142
+    Attrib Ap_ES_PLR_Ar    -1.6658487193309683
+    Attrib Z3_ES_UCR_DE    -0.7964743310679006
+    Attrib Z1_ES_PCR_N2    -0.8371233874118172
+    Attrib Gs(U)_ES_PRT_Ar    8.391070971356028
+    Attrib Z3_ES_PLR_N2    -1.5856112539382143
+    Attrib IP_ES_PCR_Ar    -7.919899851586604
+    Attrib IP_ES_PCR_G    -4.290699470244102
+    Attrib DHf_ES_PCR_DE    -3.7387870270506767
+    Attrib Z3_ES_LYS_N2    0.5026445357215799
+    Attrib Z1_ES_PRT_Ar    -17.4100588985257
+    Attrib Z1_ES_PLR_N2    6.155973034493557
+    Attrib Z3_ES_Center_DE    -5.133165197364083
+    Attrib Pt_ES_PCR_Ar    -2.528650490948875
+    Attrib Z1_ES_LYS_N2    2.8068198786096663
+    Attrib Z3_ES_ALR_Ar    -0.5470153431934673
+    Attrib IP_KH1_PLR_DE    2.1913943645848173
+    Attrib Z1_KH1_PCR_Ar    1.472150787718114
+    Attrib Z1_KH1_PCR_G    1.402215087502565
+    Attrib Pt_KH1_UCR_DE    -1.9429971963887085
+    Attrib Z3_KH1_Center_N2    0.9988840195793833
+    Attrib Ap_KH2_PLR_Ar    -3.863562297636149
+    Attrib Z3_KH2_UCR_N2    -0.32785454965102084
+    Attrib Pb_KH2_PRT_N2    -1.3264671898316638
+    Attrib IP_KH3_PCR_N2    -4.183296627757529
+    Attrib Pb_KH3_PRT_N2    5.594126793592997
+    Attrib Ap_NO_PLR_G    -3.372755143073634
+    Attrib Z3_NO_AHR_Ar    4.993623118015966
+    Attrib Z3_NO_PLR_Ar    -2.9861203027372683
+    Attrib IP_NO_PLR_N2    2.792035151413658
+    Attrib Pb_NO_PCR_DE    -6.799052154935581
+    Attrib Z3_NO_UCR_DE    1.7226764921189306
+    Attrib Z3_NO_Center_N2    -4.853829667507272
+    Attrib Z1_NO_PLR_G    0.9027727533682853
+    Attrib Z3_NO_UCR_Ar    -0.5943099485746118
+    Attrib Z3_NO_Center_DE    1.3944632354028654
+    Attrib IP_NO_Center_G    1.2246843403075307
+    Attrib Z3_ES_16_N2    5.336933848237253
+Class N
+    Input
+    Node 0
+Class P
+    Input
+    Node 1
+
+
+Time taken to build model: 69.27 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.16 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       24156               70.1373 %
+Incorrectly Classified Instances     10285               29.8627 %
+Kappa statistic                          0.4031
+Mean absolute error                      0.4079
+Root mean squared error                  0.4499
+Relative absolute error                 81.5753 %
+Root relative squared error             89.9755 %
+Total Number of Instances            34441     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.589    0.185    0.761      0.589    0.664      0.414    0.753     0.776     N
+                 0.815    0.411    0.663      0.815    0.731      0.414    0.753     0.695     P
+Weighted Avg.    0.701    0.298    0.713      0.701    0.698      0.414    0.753     0.735     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 10169  7100 |     a = N
+  3185 13987 |     b = P
+
+
+=== Re-evaluation on test set ===
+
+User supplied test set
+Relation:     LabelledTrain-weka.filters.unsupervised.attribute.Remove-R1-23,25-28,30-32,34-59,61-62,64,67,71-85,87-96,98-101,103-104,106,109,111,114,118,120,124-131,133-138,140-146,148-149,151-153,155-162,167-171,173-175,177-178,180-208,210-215,218-233,235-243,245-270,272-289,291-298,300-307,309-339,341-358,360-361,363-366,368-384,386-390,392-393,397-411,413-414,416-421,423-432,434-436-weka.filters.supervised.instance.StratifiedRemoveFolds-S0-N10-F1-weka.filters.unsupervised.instance.Randomize-S42
+Instances:     unknown (yet). Reading incrementally
+Attributes:   61
+
+=== Summary ===
+
+Correctly Classified Instances        5144               59.6198 %
+Incorrectly Classified Instances      3484               40.3802 %
+Kappa statistic                          0.1548
+Mean absolute error                      0.3856
+Root mean squared error                  0.4423
+Total Number of Instances             8628     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.574    0.271    0.928      0.574    0.709      0.212    0.705     0.935     N
+                 0.729    0.426    0.221      0.729    0.339      0.212    0.705     0.249     P
+Weighted Avg.    0.596    0.293    0.827      0.596    0.657      0.212    0.705     0.838     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4250 3152 |    a = N
+  332  894 |    b = P
+

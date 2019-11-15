@@ -1,0 +1,470 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H 5
+Relation:     LabelledTrain-weka.filters.unsupervised.attribute.Remove-R1-23,25-28,30-32,34-59,61-62,64,67,71-85,87-96,98-101,103-104,106,109,111,114,118,120,124-131,133-138,140-146,148-149,151-153,155-162,167-171,173-175,177-178,180-208,210-215,218-233,235-243,245-270,272-289,291-298,300-307,309-339,341-358,360-361,363-366,368-384,386-390,392-393,397-411,413-414,416-421,423-432,434-436-weka.filters.supervised.instance.StratifiedRemoveFolds-S0-N10-F4-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.supervised.instance.SMOTE-C2-K3-P500.0-S1-weka.filters.unsupervised.instance.Randomize-S42
+Instances:    34441
+Attributes:   61
+              Ap_AC1_PCR_N2
+              IP_AC1_PLR_DE
+              IP_AC1_Center_G
+              Ap_AC2_NPR_N2
+              Ap_AC2_PLR_G
+              Ap_AC2_ALR_N2
+              IP_AC2_Center_G
+              DHf_AC3_PCR_N2
+              IP_AC3_PCR_N2
+              Pt_AC3_PCR_N2
+              DHf_AC3_LYS_N2
+              IP_AC3_Center_G
+              Z3_ES_PCR_N2
+              IP_ES_PLR_N2
+              Gs(U)_ES_PCR_N2
+              IP_ES_PLR_DE
+              Z3_ES_PLR_Ar
+              Pt_ES_PCR_N2
+              Z3_ES_UCR_N2
+              IP_ES_Center_N2
+              Gs(U)_ES_PLR_Ar
+              Z3_ES_PCR_Ar
+              Z3_ES_AHR_Ar
+              Ap_ES_PLR_Ar
+              Z3_ES_UCR_DE
+              Z1_ES_PCR_N2
+              Gs(U)_ES_PRT_Ar
+              Z3_ES_PLR_N2
+              IP_ES_PCR_Ar
+              IP_ES_PCR_G
+              DHf_ES_PCR_DE
+              Z3_ES_LYS_N2
+              Z1_ES_PRT_Ar
+              Z1_ES_PLR_N2
+              Z3_ES_Center_DE
+              Pt_ES_PCR_Ar
+              Z1_ES_LYS_N2
+              Z3_ES_ALR_Ar
+              IP_KH1_PLR_DE
+              Z1_KH1_PCR_Ar
+              Z1_KH1_PCR_G
+              Pt_KH1_UCR_DE
+              Z3_KH1_Center_N2
+              Ap_KH2_PLR_Ar
+              Z3_KH2_UCR_N2
+              Pb_KH2_PRT_N2
+              IP_KH3_PCR_N2
+              Pb_KH3_PRT_N2
+              Ap_NO_PLR_G
+              Z3_NO_AHR_Ar
+              Z3_NO_PLR_Ar
+              IP_NO_PLR_N2
+              Pb_NO_PCR_DE
+              Z3_NO_UCR_DE
+              Z3_NO_Center_N2
+              Z1_NO_PLR_G
+              Z3_NO_UCR_Ar
+              Z3_NO_Center_DE
+              IP_NO_Center_G
+              Z3_ES_16_N2
+              class
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -8.354887556004147
+    Node 2    2.1540665332417346
+    Node 3    8.04355337353531
+    Node 4    8.683806124061531
+    Node 5    8.792565639797578
+    Node 6    1.7889765817325047
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    8.354887556004124
+    Node 2    -2.1540665332417346
+    Node 3    -8.043553373535293
+    Node 4    -8.68380612406151
+    Node 5    -8.792565639797557
+    Node 6    -1.7889765817325045
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.5888687187980786
+    Attrib Ap_AC1_PCR_N2    11.731443484830233
+    Attrib IP_AC1_PLR_DE    3.559415453292064
+    Attrib IP_AC1_Center_G    2.050590036400103
+    Attrib Ap_AC2_NPR_N2    -11.290037687502984
+    Attrib Ap_AC2_PLR_G    2.9410156375281034
+    Attrib Ap_AC2_ALR_N2    -13.695775423385927
+    Attrib IP_AC2_Center_G    -3.797632792168625
+    Attrib DHf_AC3_PCR_N2    7.305645206877039
+    Attrib IP_AC3_PCR_N2    3.5329582677914924
+    Attrib Pt_AC3_PCR_N2    -11.004602304429005
+    Attrib DHf_AC3_LYS_N2    -19.458073281782017
+    Attrib IP_AC3_Center_G    -13.51682670178668
+    Attrib Z3_ES_PCR_N2    -16.81379750156807
+    Attrib IP_ES_PLR_N2    -7.037116470901704
+    Attrib Gs(U)_ES_PCR_N2    -16.085129773763345
+    Attrib IP_ES_PLR_DE    -4.123434463325318
+    Attrib Z3_ES_PLR_Ar    4.995066690416552
+    Attrib Pt_ES_PCR_N2    27.986230586394615
+    Attrib Z3_ES_UCR_N2    1.0159451816580907
+    Attrib IP_ES_Center_N2    -10.624929811974328
+    Attrib Gs(U)_ES_PLR_Ar    -7.900390329644134
+    Attrib Z3_ES_PCR_Ar    11.974984306984103
+    Attrib Z3_ES_AHR_Ar    21.914890301703682
+    Attrib Ap_ES_PLR_Ar    -10.874872308944203
+    Attrib Z3_ES_UCR_DE    -0.7115209790612816
+    Attrib Z1_ES_PCR_N2    -3.077421268846767
+    Attrib Gs(U)_ES_PRT_Ar    11.008995427622379
+    Attrib Z3_ES_PLR_N2    1.8609547231797139
+    Attrib IP_ES_PCR_Ar    6.270930011609769
+    Attrib IP_ES_PCR_G    -11.415131557704115
+    Attrib DHf_ES_PCR_DE    -1.2214323644017433
+    Attrib Z3_ES_LYS_N2    -1.8549197558190635
+    Attrib Z1_ES_PRT_Ar    -22.106073785848707
+    Attrib Z1_ES_PLR_N2    -0.034905109262979
+    Attrib Z3_ES_Center_DE    -7.200118280312873
+    Attrib Pt_ES_PCR_Ar    -2.393259641739759
+    Attrib Z1_ES_LYS_N2    7.8510042817226395
+    Attrib Z3_ES_ALR_Ar    -0.7941626803251436
+    Attrib IP_KH1_PLR_DE    -2.0591183323511535
+    Attrib Z1_KH1_PCR_Ar    -5.42816706110952
+    Attrib Z1_KH1_PCR_G    14.321953497196452
+    Attrib Pt_KH1_UCR_DE    4.30206987874897
+    Attrib Z3_KH1_Center_N2    6.630822062893513
+    Attrib Ap_KH2_PLR_Ar    -11.510603914001727
+    Attrib Z3_KH2_UCR_N2    0.5836898569437341
+    Attrib Pb_KH2_PRT_N2    -0.71023903714177
+    Attrib IP_KH3_PCR_N2    -10.661234961971383
+    Attrib Pb_KH3_PRT_N2    1.3519037889147432
+    Attrib Ap_NO_PLR_G    15.888724217174225
+    Attrib Z3_NO_AHR_Ar    12.905325995005873
+    Attrib Z3_NO_PLR_Ar    3.6552768047937163
+    Attrib IP_NO_PLR_N2    16.60374347255304
+    Attrib Pb_NO_PCR_DE    -9.37454772838571
+    Attrib Z3_NO_UCR_DE    -2.787393913853381
+    Attrib Z3_NO_Center_N2    -12.9430299865927
+    Attrib Z1_NO_PLR_G    0.32048220157164764
+    Attrib Z3_NO_UCR_Ar    -0.2750540049143832
+    Attrib Z3_NO_Center_DE    10.045206054412413
+    Attrib IP_NO_Center_G    -2.0139633400301338
+    Attrib Z3_ES_16_N2    2.6208895415815117
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -7.9522702207363185
+    Attrib Ap_AC1_PCR_N2    7.954622351215795
+    Attrib IP_AC1_PLR_DE    -11.634639615903456
+    Attrib IP_AC1_Center_G    13.223955977440047
+    Attrib Ap_AC2_NPR_N2    -1.091439521381688
+    Attrib Ap_AC2_PLR_G    2.2255622852744756
+    Attrib Ap_AC2_ALR_N2    1.108301311822428
+    Attrib IP_AC2_Center_G    6.811608375460387
+    Attrib DHf_AC3_PCR_N2    8.534895334808002
+    Attrib IP_AC3_PCR_N2    2.9716894557189613
+    Attrib Pt_AC3_PCR_N2    -4.597908267121809
+    Attrib DHf_AC3_LYS_N2    -4.659631952976366
+    Attrib IP_AC3_Center_G    -18.53384242495789
+    Attrib Z3_ES_PCR_N2    10.345376652937981
+    Attrib IP_ES_PLR_N2    32.14773333964548
+    Attrib Gs(U)_ES_PCR_N2    13.524654649159956
+    Attrib IP_ES_PLR_DE    0.2426997774552372
+    Attrib Z3_ES_PLR_Ar    -5.325000615909693
+    Attrib Pt_ES_PCR_N2    -9.421912063743513
+    Attrib Z3_ES_UCR_N2    -8.515041127314719
+    Attrib IP_ES_Center_N2    -4.017405108366888
+    Attrib Gs(U)_ES_PLR_Ar    8.697167190618934
+    Attrib Z3_ES_PCR_Ar    35.973601962354444
+    Attrib Z3_ES_AHR_Ar    7.642040995652493
+    Attrib Ap_ES_PLR_Ar    -1.8587355008316595
+    Attrib Z3_ES_UCR_DE    4.263401506805335
+    Attrib Z1_ES_PCR_N2    1.2083953233994906
+    Attrib Gs(U)_ES_PRT_Ar    -10.90390331210273
+    Attrib Z3_ES_PLR_N2    -0.23207093024453843
+    Attrib IP_ES_PCR_Ar    -19.839326838248112
+    Attrib IP_ES_PCR_G    -8.087338376016685
+    Attrib DHf_ES_PCR_DE    -5.349296091552678
+    Attrib Z3_ES_LYS_N2    -3.1839589855180517
+    Attrib Z1_ES_PRT_Ar    -7.300227939378717
+    Attrib Z1_ES_PLR_N2    2.8501101226655754
+    Attrib Z3_ES_Center_DE    16.1413727882821
+    Attrib Pt_ES_PCR_Ar    -3.7806583286132707
+    Attrib Z1_ES_LYS_N2    -3.3274201414973734
+    Attrib Z3_ES_ALR_Ar    -8.948337714867929
+    Attrib IP_KH1_PLR_DE    3.062169308220766
+    Attrib Z1_KH1_PCR_Ar    -13.32822921800356
+    Attrib Z1_KH1_PCR_G    -33.73346622851853
+    Attrib Pt_KH1_UCR_DE    -3.4625334938853096
+    Attrib Z3_KH1_Center_N2    -2.696875916193203
+    Attrib Ap_KH2_PLR_Ar    -5.768815816562877
+    Attrib Z3_KH2_UCR_N2    0.5656115842130344
+    Attrib Pb_KH2_PRT_N2    -5.157782103018249
+    Attrib IP_KH3_PCR_N2    1.4819114641505209
+    Attrib Pb_KH3_PRT_N2    5.577877272573916
+    Attrib Ap_NO_PLR_G    -29.859170485455792
+    Attrib Z3_NO_AHR_Ar    17.081105365408508
+    Attrib Z3_NO_PLR_Ar    -16.112345336991254
+    Attrib IP_NO_PLR_N2    -16.57494001768244
+    Attrib Pb_NO_PCR_DE    -8.037205259266809
+    Attrib Z3_NO_UCR_DE    7.194588987775228
+    Attrib Z3_NO_Center_N2    6.116892786529744
+    Attrib Z1_NO_PLR_G    104.98440738638817
+    Attrib Z3_NO_UCR_Ar    -1.0763957032714662
+    Attrib Z3_NO_Center_DE    -15.741004283069532
+    Attrib IP_NO_Center_G    -2.431889465636881
+    Attrib Z3_ES_16_N2    -4.5596236236670045
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -17.33534356700085
+    Attrib Ap_AC1_PCR_N2    1.2286714653215538
+    Attrib IP_AC1_PLR_DE    -1.2667663019067836
+    Attrib IP_AC1_Center_G    -9.040602964809425
+    Attrib Ap_AC2_NPR_N2    -5.945932999039529
+    Attrib Ap_AC2_PLR_G    1.2933809140785606
+    Attrib Ap_AC2_ALR_N2    5.376960288347982
+    Attrib IP_AC2_Center_G    -17.33854848905694
+    Attrib DHf_AC3_PCR_N2    4.546247286530089
+    Attrib IP_AC3_PCR_N2    0.6076290227882943
+    Attrib Pt_AC3_PCR_N2    1.2154746559595384
+    Attrib DHf_AC3_LYS_N2    -7.463047824526805
+    Attrib IP_AC3_Center_G    3.5502819862555417
+    Attrib Z3_ES_PCR_N2    -12.503692050891814
+    Attrib IP_ES_PLR_N2    9.388424083708644
+    Attrib Gs(U)_ES_PCR_N2    -5.19517669548523
+    Attrib IP_ES_PLR_DE    -4.575702778420315
+    Attrib Z3_ES_PLR_Ar    14.05981908790343
+    Attrib Pt_ES_PCR_N2    -16.174232186930997
+    Attrib Z3_ES_UCR_N2    -11.579652475836413
+    Attrib IP_ES_Center_N2    -8.288115450543653
+    Attrib Gs(U)_ES_PLR_Ar    7.526428173766401
+    Attrib Z3_ES_PCR_Ar    -3.3367858524834597
+    Attrib Z3_ES_AHR_Ar    23.099625729554514
+    Attrib Ap_ES_PLR_Ar    11.998782134080024
+    Attrib Z3_ES_UCR_DE    0.91982924597514
+    Attrib Z1_ES_PCR_N2    7.787767666910181
+    Attrib Gs(U)_ES_PRT_Ar    -15.066538076968222
+    Attrib Z3_ES_PLR_N2    11.16150469364702
+    Attrib IP_ES_PCR_Ar    -29.83295189767742
+    Attrib IP_ES_PCR_G    28.388400894517748
+    Attrib DHf_ES_PCR_DE    -1.6931289090818125
+    Attrib Z3_ES_LYS_N2    -0.5156054672296723
+    Attrib Z1_ES_PRT_Ar    -4.639407146365364
+    Attrib Z1_ES_PLR_N2    1.3768467548213466
+    Attrib Z3_ES_Center_DE    16.600032254124272
+    Attrib Pt_ES_PCR_Ar    7.296533656803047
+    Attrib Z1_ES_LYS_N2    -4.6569197829756535
+    Attrib Z3_ES_ALR_Ar    -17.386709128380296
+    Attrib IP_KH1_PLR_DE    0.3863908717978502
+    Attrib Z1_KH1_PCR_Ar    32.867041405380824
+    Attrib Z1_KH1_PCR_G    -39.83164851166635
+    Attrib Pt_KH1_UCR_DE    -11.569495236312724
+    Attrib Z3_KH1_Center_N2    -10.095872782071794
+    Attrib Ap_KH2_PLR_Ar    0.17217098440403164
+    Attrib Z3_KH2_UCR_N2    -11.614045707387996
+    Attrib Pb_KH2_PRT_N2    10.734322882592577
+    Attrib IP_KH3_PCR_N2    -0.4221319202499529
+    Attrib Pb_KH3_PRT_N2    -4.0263193193601445
+    Attrib Ap_NO_PLR_G    -59.650248820704206
+    Attrib Z3_NO_AHR_Ar    -13.287942635135845
+    Attrib Z3_NO_PLR_Ar    -52.02029851359262
+    Attrib IP_NO_PLR_N2    -11.75878450315772
+    Attrib Pb_NO_PCR_DE    -10.54938948723116
+    Attrib Z3_NO_UCR_DE    -4.375151289109117
+    Attrib Z3_NO_Center_N2    15.151404774083895
+    Attrib Z1_NO_PLR_G    -132.58225340801272
+    Attrib Z3_NO_UCR_Ar    -14.783071730660895
+    Attrib Z3_NO_Center_DE    -13.449398686957279
+    Attrib IP_NO_Center_G    22.33510972089406
+    Attrib Z3_ES_16_N2    -7.869010879318413
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -25.481232064484576
+    Attrib Ap_AC1_PCR_N2    3.6695783580745664
+    Attrib IP_AC1_PLR_DE    -1.9143246389739441
+    Attrib IP_AC1_Center_G    -9.296727410350396
+    Attrib Ap_AC2_NPR_N2    -6.70785729332274
+    Attrib Ap_AC2_PLR_G    1.9109756688327326
+    Attrib Ap_AC2_ALR_N2    6.188214556543996
+    Attrib IP_AC2_Center_G    19.762734806188377
+    Attrib DHf_AC3_PCR_N2    5.562824794633733
+    Attrib IP_AC3_PCR_N2    -0.5023405257165392
+    Attrib Pt_AC3_PCR_N2    -1.1818478188650894
+    Attrib DHf_AC3_LYS_N2    -5.017838341797168
+    Attrib IP_AC3_Center_G    -7.502168615171386
+    Attrib Z3_ES_PCR_N2    -22.173485709295548
+    Attrib IP_ES_PLR_N2    23.67035519518806
+    Attrib Gs(U)_ES_PCR_N2    3.83195445880465
+    Attrib IP_ES_PLR_DE    -32.63738911911148
+    Attrib Z3_ES_PLR_Ar    33.97047012306708
+    Attrib Pt_ES_PCR_N2    -16.058801381439473
+    Attrib Z3_ES_UCR_N2    -24.051823553439714
+    Attrib IP_ES_Center_N2    -0.2988536413705303
+    Attrib Gs(U)_ES_PLR_Ar    24.08176115675517
+    Attrib Z3_ES_PCR_Ar    -22.320985435862774
+    Attrib Z3_ES_AHR_Ar    -0.9496750326320834
+    Attrib Ap_ES_PLR_Ar    36.85630614587075
+    Attrib Z3_ES_UCR_DE    -20.256788334245922
+    Attrib Z1_ES_PCR_N2    -0.324767951307523
+    Attrib Gs(U)_ES_PRT_Ar    -8.834250686496473
+    Attrib Z3_ES_PLR_N2    12.015621049698153
+    Attrib IP_ES_PCR_Ar    -8.199372941770443
+    Attrib IP_ES_PCR_G    5.936211062314089
+    Attrib DHf_ES_PCR_DE    -9.51927426470839
+    Attrib Z3_ES_LYS_N2    0.4832711392391716
+    Attrib Z1_ES_PRT_Ar    -8.921193536620246
+    Attrib Z1_ES_PLR_N2    0.27039627476812217
+    Attrib Z3_ES_Center_DE    11.27878493723236
+    Attrib Pt_ES_PCR_Ar    12.898550893494503
+    Attrib Z1_ES_LYS_N2    1.5702686866475526
+    Attrib Z3_ES_ALR_Ar    -25.608196357936468
+    Attrib IP_KH1_PLR_DE    27.913215090567043
+    Attrib Z1_KH1_PCR_Ar    69.84714322008635
+    Attrib Z1_KH1_PCR_G    76.25767863857638
+    Attrib Pt_KH1_UCR_DE    -10.267099259338865
+    Attrib Z3_KH1_Center_N2    -4.928700609126552
+    Attrib Ap_KH2_PLR_Ar    0.7841215784738508
+    Attrib Z3_KH2_UCR_N2    -23.907359029793078
+    Attrib Pb_KH2_PRT_N2    -5.712487133529341
+    Attrib IP_KH3_PCR_N2    -3.121965186227352
+    Attrib Pb_KH3_PRT_N2    5.759675805991843
+    Attrib Ap_NO_PLR_G    -45.6156782554534
+    Attrib Z3_NO_AHR_Ar    -1.0612885973221169
+    Attrib Z3_NO_PLR_Ar    -64.58093022590398
+    Attrib IP_NO_PLR_N2    -8.520830146092429
+    Attrib Pb_NO_PCR_DE    -3.8306771257501993
+    Attrib Z3_NO_UCR_DE    -10.449938231207831
+    Attrib Z3_NO_Center_N2    8.807783733649874
+    Attrib Z1_NO_PLR_G    73.06352673379801
+    Attrib Z3_NO_UCR_Ar    -24.162709936716094
+    Attrib Z3_NO_Center_DE    -16.452490622990712
+    Attrib IP_NO_Center_G    -6.904154939368391
+    Attrib Z3_ES_16_N2    -0.9740594607811054
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -3.482335990498277
+    Attrib Ap_AC1_PCR_N2    9.82782847892753
+    Attrib IP_AC1_PLR_DE    -1.231763342359098
+    Attrib IP_AC1_Center_G    13.248746959671378
+    Attrib Ap_AC2_NPR_N2    1.1437220785738271
+    Attrib Ap_AC2_PLR_G    -13.052588311154471
+    Attrib Ap_AC2_ALR_N2    8.779585734568654
+    Attrib IP_AC2_Center_G    5.230933206148389
+    Attrib DHf_AC3_PCR_N2    4.16484648938267
+    Attrib IP_AC3_PCR_N2    -12.454717322694243
+    Attrib Pt_AC3_PCR_N2    -4.316588793404915
+    Attrib DHf_AC3_LYS_N2    12.551163803127022
+    Attrib IP_AC3_Center_G    2.693826146433606
+    Attrib Z3_ES_PCR_N2    5.0996573288065115
+    Attrib IP_ES_PLR_N2    7.82573296340933
+    Attrib Gs(U)_ES_PCR_N2    -6.158860885750465
+    Attrib IP_ES_PLR_DE    -0.7536230010440418
+    Attrib Z3_ES_PLR_Ar    -9.672484329053914
+    Attrib Pt_ES_PCR_N2    13.67938136360642
+    Attrib Z3_ES_UCR_N2    10.04926808809595
+    Attrib IP_ES_Center_N2    5.219889579592119
+    Attrib Gs(U)_ES_PLR_Ar    0.16234606253364675
+    Attrib Z3_ES_PCR_Ar    5.2970581252747975
+    Attrib Z3_ES_AHR_Ar    7.375988589101694
+    Attrib Ap_ES_PLR_Ar    -6.060104071771953
+    Attrib Z3_ES_UCR_DE    -1.45198702154385
+    Attrib Z1_ES_PCR_N2    -2.676132986688285
+    Attrib Gs(U)_ES_PRT_Ar    1.3483869961483022
+    Attrib Z3_ES_PLR_N2    3.915222992801361
+    Attrib IP_ES_PCR_Ar    15.549793178994316
+    Attrib IP_ES_PCR_G    -0.4579603722680998
+    Attrib DHf_ES_PCR_DE    -0.3075256497445677
+    Attrib Z3_ES_LYS_N2    10.287106964706481
+    Attrib Z1_ES_PRT_Ar    -5.429122680913674
+    Attrib Z1_ES_PLR_N2    -10.7573939228827
+    Attrib Z3_ES_Center_DE    -6.773609564119024
+    Attrib Pt_ES_PCR_Ar    -16.815853048162932
+    Attrib Z1_ES_LYS_N2    -7.072040415688573
+    Attrib Z3_ES_ALR_Ar    -4.095121933733996
+    Attrib IP_KH1_PLR_DE    -22.15255298907679
+    Attrib Z1_KH1_PCR_Ar    -14.855166910223504
+    Attrib Z1_KH1_PCR_G    13.442048597815525
+    Attrib Pt_KH1_UCR_DE    -9.133675142795852
+    Attrib Z3_KH1_Center_N2    13.095792365428746
+    Attrib Ap_KH2_PLR_Ar    -12.923419676879316
+    Attrib Z3_KH2_UCR_N2    12.940228972616962
+    Attrib Pb_KH2_PRT_N2    -8.49235739906359
+    Attrib IP_KH3_PCR_N2    -6.984663671353188
+    Attrib Pb_KH3_PRT_N2    -15.35938768791579
+    Attrib Ap_NO_PLR_G    20.671839112711393
+    Attrib Z3_NO_AHR_Ar    11.569479953591147
+    Attrib Z3_NO_PLR_Ar    19.379118343644695
+    Attrib IP_NO_PLR_N2    15.897368288549346
+    Attrib Pb_NO_PCR_DE    1.996958031704319
+    Attrib Z3_NO_UCR_DE    6.289310019052501
+    Attrib Z3_NO_Center_N2    6.847830582139464
+    Attrib Z1_NO_PLR_G    1.369300413689305
+    Attrib Z3_NO_UCR_Ar    15.561566031960393
+    Attrib Z3_NO_Center_DE    8.646650349648125
+    Attrib IP_NO_Center_G    0.40351056065960844
+    Attrib Z3_ES_16_N2    0.8536712481825453
+Class N
+    Input
+    Node 0
+Class P
+    Input
+    Node 1
+
+
+Time taken to build model: 140.93 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.28 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       26649               77.3758 %
+Incorrectly Classified Instances      7792               22.6242 %
+Kappa statistic                          0.5471
+Mean absolute error                      0.2683
+Root mean squared error                  0.3747
+Relative absolute error                 53.6605 %
+Root relative squared error             74.943  %
+Total Number of Instances            34441     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.921    0.374    0.712      0.921    0.803      0.572    0.873     0.850     N
+                 0.626    0.079    0.887      0.626    0.734      0.572    0.873     0.895     P
+Weighted Avg.    0.774    0.227    0.799      0.774    0.769      0.572    0.873     0.873     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 15902  1367 |     a = N
+  6425 10747 |     b = P
+
+
+=== Re-evaluation on test set ===
+
+User supplied test set
+Relation:     LabelledTrain-weka.filters.unsupervised.attribute.Remove-R1-23,25-28,30-32,34-59,61-62,64,67,71-85,87-96,98-101,103-104,106,109,111,114,118,120,124-131,133-138,140-146,148-149,151-153,155-162,167-171,173-175,177-178,180-208,210-215,218-233,235-243,245-270,272-289,291-298,300-307,309-339,341-358,360-361,363-366,368-384,386-390,392-393,397-411,413-414,416-421,423-432,434-436-weka.filters.supervised.instance.StratifiedRemoveFolds-S0-N10-F1-weka.filters.unsupervised.instance.Randomize-S42
+Instances:     unknown (yet). Reading incrementally
+Attributes:   61
+
+=== Summary ===
+
+Correctly Classified Instances        6988               80.9921 %
+Incorrectly Classified Instances      1640               19.0079 %
+Kappa statistic                          0.0838
+Mean absolute error                      0.296 
+Root mean squared error                  0.3711
+Total Number of Instances             8628     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.919    0.847    0.867      0.919    0.892      0.086    0.682     0.924     N
+                 0.153    0.081    0.237      0.153    0.186      0.086    0.682     0.226     P
+Weighted Avg.    0.810    0.739    0.778      0.810    0.792      0.086    0.682     0.825     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 6801  601 |    a = N
+ 1039  187 |    b = P
+
