@@ -27,4 +27,14 @@ Given the success of undersampling in increasing the performance of the classifi
 
 ![Alt text](process.png?raw=true "Title")
 
+As the diagram suggests, at the testing phase, the networks are applied to the test set and voting by committee was performed to determine the final decision. The decision threshold of the vote was tweaked to find the optimum operating point along the P-R curve. The use of bagging improved the optimal operating point of the classifier slightly
+
+## 5) Results
+Using multilayer perceptron as a classifier, genetic algorithm as a feature selector, and voting-based query as an active learning method, the following precision-recall curve was generated.
+
+![Alt text](Results/PRCurve.png?raw=true "Title")
+
+After fine-tuning our decision threshold, we were able to achieve precision and recall rate similarly: 30.0% and 30.6%. To estimate classifier performance on the blind test set, we used bootstrapping, to generate 200 class imbalanced samples from the hold-out test set. The classifier’s precision at a recall rate of 30% was computed at each step.
+
+![Alt text](Results/Hist.png?raw=true "Title")
 
